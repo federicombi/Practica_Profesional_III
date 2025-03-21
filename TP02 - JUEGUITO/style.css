@@ -1,0 +1,113 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: rgba(3, 0, 151, 0.301);
+}
+
+
+
+@keyframes lateEffect {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 5px rgba(209, 9, 9); 
+    }
+    50% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(205, 10, 10); 
+    }
+    100% {
+      transform: scale(1); 
+      box-shadow: 0 0 0 5px rgba(250, 14, 14); 
+    }
+  }
+
+.swal2-popup {
+    animation: none; 
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.swal2-popup:before {
+    content: ''; /* Necesario para crear un pseudo-elemento (????*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px; 
+    border: 3px solid rgba(0, 0, 0, 0.1); 
+    animation: lateEffect 1s ease-in-out infinite; 
+    pointer-events: none; 
+    z-index: -1; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    color:black;
+}
+.contenedor{
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #8d8dfa;
+    user-select: none;
+}
+.cont_titulo{
+    background-color: #3b91e6;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+    font-weight: bold;
+}
+.cont_cuerpo{
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#mostrador{
+    font-size: 150pt;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
+button{
+    height: 80px;
+    width: 200px;
+    font-size: 30pt;
+    font-weight: bold;
+    user-select: none;
+}
+.swal2-input{
+    font-size: 30pt;
+    font-weight: bold;
+    padding: 0;
+    max-width:200px; 
+}
+
