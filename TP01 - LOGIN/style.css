@@ -1,0 +1,33 @@
+body{
+    background-color: aliceblue;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cuerpo_login {
+    width:300px;
+    color:red;
+    background-color: palegreen;
+    box-sizing: border-box;
+    border: 1px solid darkcyan;
+    border-radius: 15px;
+    padding:20px;
+    text-align: center;
+}
+#mensaje_final{
+    color: green;
+    font-size: 50pt;
+    text-align: center;
+    user-select: none;
+}
+.mensaje_error{
+    color: red;
+    height: 20px;
+}
+img{
+    user-select: none;
+}
+button{
+    padding:10px;
+}
