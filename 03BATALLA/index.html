@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BATALLA</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="overlay" id="overlay"></div>
+        <div class="juego">
+            <div class="header">
+                <H1>BATTLESHIP 25</H1>
+                <button id="boton_jugar" onclick="jugar()">JUGAR</button> 
+            </div>
+            <div class="cuerpo">
+                <div id="campo_de_batalla">
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <table>
+                <caption>
+                    <h1>ENEMIGOS</h1>
+                </caption>
+                <tr>
+                    <th>Enemigo</th>
+                    <th>Salud</th>
+                </tr>
+                <tr>
+                    <td id="nodriza"></td>
+                    <td class="salud">
+                        <img src="/images/5.png" id="nodriza_salud" alt="Salud nodriza">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="submarino"></td>
+                    <td class="salud">
+                        <img src="/images/4.png" id="submarino_salud" alt="Salud submarino">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="barco"></td>
+                    <td class="salud">
+                        <img src="/images/3.png" id="barco_salud" alt="Salud barco">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="lancha"></td>
+                    <td class="salud">
+                        <img src="/images/2.png" id="lancha_salud" alt="Salud lancha">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="bote"></td>
+                    <td class="salud">
+                        <img src="/images/1.png" id="bote_salud" alt="Salud bote">
+                    </td>
+                </tr>
+            </table>
+        </div>
+            
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/fn.js"></script>
+    
+</html>
